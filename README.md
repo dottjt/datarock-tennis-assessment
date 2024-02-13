@@ -7,6 +7,7 @@ Datarock Coding Exercise - Tennis
 - Install Node.js version 20.9.0 (https://nodejs.org/en)
 - `npm install` (install Node.js dependencies)
 - `npm run start` (run application)
+- `npm run test` (run tests)
 
 # Initial Pre-code Planning
 

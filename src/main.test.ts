@@ -1,7 +1,20 @@
 import { describe, expect, test } from '@jest/globals';
+import { newMatch } from './main'
+import { Points } from './types';
 
-describe('sum module', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(1 + 2).toBe(3);
+describe('newMatch', () => {
+  test('create match with initialised player data', () => {
+    const match = newMatch('peter', 'john');
+
+    expect(match).toMatchObject({
+      peter: {
+        currentGamePoints: Points.Zero,
+        gamesWon: 0,
+      },
+      john: {
+        currentGamePoints: Points.Zero,
+        gamesWon: 0,
+      }
+    })
   });
 });

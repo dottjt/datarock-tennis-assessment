@@ -1,6 +1,6 @@
 # datarock-tennis-assessment
 
-Hey there! I spent a few hours coding this together. Hopefully it provides you with enough information to gauge my coding ability/style :)
+Hey there! I spent a few hours coding this together. Hopefully it provides you with enough information to gauge my coding ability/style 😊
 
 # If I Had More Time
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx ts-node ./src/main.ts",
-    "dev": "npx ts-node-dev ./src/main.ts",
+    "dev": "npx ts-node-dev --respawn ./src/main.ts",
     "test": "npx jest ./src/**.test.ts"
   },
   "keywords": [],

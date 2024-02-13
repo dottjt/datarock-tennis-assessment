@@ -1,12 +1,14 @@
-import { Match, Points } from './types';
+import { matchScore } from "./utils/matchScore"
+import { newMatch } from "./utils/newMatch"
+import { pointWonBy } from "./utils/pointWonBy"
 
-export const newMatch = (player1Name: string, player2Name: string): Match => ({
-  [player1Name]: {
-    currentGamePoints: Points.Zero,
-    gamesWon: 0,
-  },
-  [player2Name]: {
-    currentGamePoints: Points.Zero,
-    gamesWon: 0,
-  },
+// play random match
+const players = ['peter', 'john']
+const match = newMatch(players[0], players[1])
+const pointWonByPlayer = pointWonBy(match)
+const checkMatchScore = matchScore(match)
+
+Array.from(Array(100).keys()).forEach(() => {
+  pointWonByPlayer(players[Math.round(Math.random())])
+  checkMatchScore()
 })

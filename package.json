@@ -1,0 +1,22 @@
+{
+  "name": "datarock-tennis-assessment",
+  "version": "1.0.0",
+  "description": "Datarock Coding Exercise - Tennis",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node ./src/main.ts",
+    "dev": "npx ts-node-dev ./src/main.ts",
+    "test": "npx jest ./src/**.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
